@@ -1,0 +1,112 @@
+Danica Conway's Coursera Getting And Cleaning Data Projecct Codebook
+
+8/28/2016
+
+Acknowledgement:  I used the following web published codebook as a guideline for my own codebook
+http://www.icpsr.umich.edu/icpsrweb/ICPSR/help/cb9721.jsp
+
+Acknowledgement:  Data used for this project comes from the following study: 
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
+Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly 
+Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). 
+Vitoria-Gasteiz, Spain. Dec 2012
+
+Acknowlegement:  The Notes provided by David Hood here: 
+https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment
+
+
+
+Data Collection:
+
+Data was collected by the study acknowledged above.  However, using the readme file from the study:
+the study measured movements of 30 participants using a smartphone as they performed the following
+activities:
+
+
+It measured acceleration, movements in the x, y and z axes.  Each measurement was conducted over a
+specific period of time, with one time-period being 2.56 seconds.  128 readings were taken within 
+each 2.56 second interval, and though the number of repetitions on these measuremments were about 54,
+the actual number of reps did vary slightly from subject-to-subject.
+
+The measurements provided by the smartphone including the following types of data:
+tri-axial acceleration (x, y and z directions) which is a rate determination of how fast a person
+     increased or decreased speed in each of the spatial coordinates
+tri-axial angular velocity - basically how fast the body is changing position, say, turning left and up,
+     or moving down and right
+The authors determined means of these multiple different measurements, as well as standard deviations, 
+and it was these that were used for the Getting and Cleaning Data exercise
+
+
+Dataset 1:  DanicaConwayDataSet1.csv 
+
+Summary:  This file contains the non-aggregated experimental measurements for all test subjects, both
+during the training phase and the actual test phase of the experiment, including all activity types
+and repetitions.
+
+Number of activity types = 6
+Number of participants = 30
+Number of records recorded including training and test = 10299
+Number of variables measured in each repetition (kept) = 86, not including test subject # or Activity Label
+Average # of reps included for each activity type and participant = 57
+# of files used to create data set = 8, including column name file and activity type file, training and 
+      test x & y data, and test subject for training and test
+
+
+
+Column 1 = ActivityType, character, one row represents one rep of one test subject doing one activity
+     (activity type was determined from linking the numeric value given to an activity to its name,
+      as provided in the activity labels file provided with the dataset.)
+      1. Walking
+      2. Walking Upstairs
+      3. Walking Downstairs
+      4. Sitting
+      5. Standing
+      6. Laying
+Column 2 = the participant number
+Columns 3:8 = tbody acceleration means and std devs for x, y and z axes
+Columns 9:14 = tbody Gravity acceleration means and std devs for x, y and z axes
+Columns 15:20 = tbody Acceleration Jerk means and std devs for x, y and z axes
+Columns 21:26 = tbody gyroscopic motion means and std devs for x, y and z axes
+Columns 27:32 = tbody gyroscopic jerk means, std devs for x, y, z
+Columns 33:34 = tbody magnitude of acceleration?? mean, std devs
+Columns 35:36 = tbody gravity acceleration magnitude?? mean, std devs
+Columns 37:38 = tbody acceleration jerk magnitude?? mean, std devs
+Columns 39:40 = tbody gyroscopic magnitude?? mean, std devs
+Columns 41:42 = Tbody gyroscopic jerk magnitude?? mean, std devs
+Columns 43:48 = fbody acceleration means and std devs for x, y and z axes
+Columns 49:51 = fbody acceleration mean frequency and std devs for x, y and z axes
+Columns 52:57 = fbody Acceleration Jerk means and std devs for x, y and z axes
+Columns 58:60 = fbody acceleration jerk mean frequencies x, y, z
+Columns 61:66 = fbody gyroscopic motion means and std devs for x, y and z axes
+Columns 67:69 = fbody gyroscopic mean frequencies x, y, z
+Columns 70:72 = fbody acceleration magnitude mean, frequency and std dev
+Columns 73:75 = fbody acceleration jerk magnitude mean, frequency and std dev
+Columns 76:78 = fbody gyroscopic magnitude mean, frequency and std dev
+Columns 79:81 = fbody gyroscopic jerk magnitude mean, frequency and std dev
+Column 82 = angle of momentum tbody acceleration mean
+Column 83 = angle of momentum tbody acceleration jerk gravity mean
+Column 84 = angle of momentum tbody gyroscopic jerk mean
+Column 85 = angle of momentum tbody gyroscopic jerk gravity mean
+Column 86 = angle of momentum x axis gravity mean
+Column 87 = angle of momentum y axis gravity mean
+Column 88 = angle of momentum z axis gravity mean
+
+
+
+
+Dataset 2:  DanicaConwayMeanResults.csv
+
+Summary:  This dataset is aggregated by activity type, then participant number.  The values in columns 3-88
+are actually mean values of the repetitions that were included in the first dataset, so they end up being
+means of means (of means, since the raw data is also meaned).
+
+
+Number of activity types = 6
+Number of participants = 30
+Number of records recorded including training and test = 180
+Number of variables measured in each repetition (kept) = 86, not including test subject # or Activity Label
+# of reps included for each activity type and participant = 1
+# of files used to create data set = 1, which is the first dataset
+
+Columns represent the same as in dataset 1, except that each value under a column represents an average value
+of that measurement for that activity and that client
