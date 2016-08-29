@@ -1,8 +1,8 @@
-<h2>The final Project for Coursera Getting and Cleaning Data Course</h2>
+<h1>The final Project for Coursera Getting and Cleaning Data Course</h1>
 
 Danica Conway, 8/28/2016
 
-<h3>Abstract:</h3>
+<h2>Abstract:</h2>
 Experimental data from the UCI Machine Learning Repository was downloaded and manipulated for the purpose of showing that the user (me) could gather data from a website, join it together in a meaningful way, label it meaningfully, and then provide a tidy subset of data that contained the grouped mean results based on the Activity Type and Test Subject.  This data could potentially then be used by someone else to further subset and analyze the data.
 <br>
 <br>
@@ -14,7 +14,7 @@ Data provided in this repo includes:
 <p>5. <b>ReadMe.md</b> - this file, whose intent is to describe what the repo contains, and what each file represents.
 <br>
 <br>
-<h3>Methods Used To Get and Clean Data</h3>
+<h2>Methods Used To Get and Clean Data</h2>
 <p>1.  Data was downloaded using the read.table function
 <p>2.  Measurement results data from the training portion and the actual testing portion of the experiment were row bound
 <p>3.  The features.txt file was used to put header names on the columns
@@ -34,7 +34,7 @@ Data provided in this repo includes:
 <p>3.  Each type of observational unit forms a table.</i>
 <br>
 <br>
-<h3>References & Acknowledgements</h3>
+<h2>References & Acknowledgements</h2>
 <p>Reference for Tidy Data Principles: <b>http://vita.had.co.nz/papers/tidy-data.pdf</b>
 <br>
 Data was pulled from the <b>Human Activity Recognition on Smartphones project</b> website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
