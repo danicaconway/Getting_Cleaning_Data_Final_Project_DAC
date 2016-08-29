@@ -1,4 +1,4 @@
-<h1>The final Project for Coursera Getting and Cleaning Data Course</h1>
+<h1>Final Project for Getting and Cleaning Data Course</h1>
 
 Danica Conway, 8/28/2016
 
