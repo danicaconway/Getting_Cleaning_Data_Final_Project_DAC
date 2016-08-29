@@ -1,4 +1,3 @@
-# Getting_Cleaning_Data_Final_Project_DAC
 <h2>The final Project for Coursera Getting and Cleaning Data Course</h2>
 
 Danica Conway, 8/28/2016
@@ -12,15 +11,15 @@ Data provided in this repo includes:
 <p>3. <b>Codebook.txt</b> = this describes what each column in the data represents, for both data sets.</p>
 
 
-Data was pulled from the <h3>Human Activity Recognition on Smartphones project</h3> website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Data was pulled from the <b>Human Activity Recognition on Smartphones project</b> website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 Data used included training as well as testing results and included the following files:
-1.  activity_labels.txt = types of activity and the corresponding code (value) that represents each
-2.  features.txt = measurement types that were taken across each activity type and each subject (person) used in the study
-3.  features_info.txt = explains what the feature descriptions mean, such as acceleration in the X direction, or y direction, or z direction
-4.  x_train.txt and x_test.txt = this is the actual measurement data for each of the test subjects and for each activity and repetition
-5.  y_train.txt and y_test.txt = the activity type (numeric values 1-6) for each row of data obtained
-6.  subject_train.txt and subject_test.txt = these are the actual subjects (numeric value represents a person) that were tied to each row of measurement data
-7.  The rest of the data files were raw data that were used to come up with the x_train results files, and they were NOT used in this project.
+<p>1.  activity_labels.txt = types of activity and the corresponding code (value) that represents each
+<p>2.  features.txt = measurement types that were taken across each activity type and each subject (person) used in the study
+<p>3.  features_info.txt = explains what the feature descriptions mean, such as acceleration in the X direction, or y direction, or z direction
+<p>4.  x_train.txt and x_test.txt = this is the actual measurement data for each of the test subjects and for each activity and repetition
+<p>5.  y_train.txt and y_test.txt = the activity type (numeric values 1-6) for each row of data obtained
+<p>6.  subject_train.txt and subject_test.txt = these are the actual subjects (numeric value represents a person) that were tied to each row of measurement data
+<p>7.  The rest of the data files were raw data that were used to come up with the x_train results files, and they were NOT used in this project.
 
 
 
