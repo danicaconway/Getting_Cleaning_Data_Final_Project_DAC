@@ -25,17 +25,20 @@ Data provided in this repo includes:
 <p>9.  The subject numbers were then inserted into the front (left) of the measurement results data frame, and I swapped the order of the ActivityType and TestSubjectNumber columns to make it more clear which aggregation was being done first in step 10
 <p>10. A subset of the data was created by aggregating first by ActivityType and then by Test Subject, and taking the mean of all following colummns.
 <p>11. Finally, the original tidy data set and the aggregated means result file were saved as csv files
-
-<p>Data in both files conform to the following Tidy Data Principles:
+<br>
+<br>
+<p><i>Data in both files conform to the following Tidy Data Principles:
 <p>1.  Each variable forms a column.
 <p>2.  Each observation forms a row.
-<p>3.  Each type of observational unit forms a table.
+<p>3.  Each type of observational unit forms a table.</i>
 <br>
 <br>
 <h3>References & Acknowledgements</h3>
-<i>Reference for Tidy Data Principles: http://vita.had.co.nz/papers/tidy-data.pdf</i>
+<p>Reference for Tidy Data Principles: <b>http://vita.had.co.nz/papers/tidy-data.pdf</b>
+<br>
 Data was pulled from the <b>Human Activity Recognition on Smartphones project</b> website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 Data used included training as well as testing results and included the following files:
+<br>
 <p>1.  activity_labels.txt = types of activity and the corresponding code (value) that represents each
 <p>2.  features.txt = measurement types that were taken across each activity type and each subject (person) used in the study
 <p>3.  features_info.txt = explains what the feature descriptions mean, such as acceleration in the X direction, or y direction, or z direction
@@ -43,18 +46,10 @@ Data used included training as well as testing results and included the followin
 <p>5.  y_train.txt and y_test.txt = the activity type (numeric values 1-6) for each row of data obtained
 <p>6.  subject_train.txt and subject_test.txt = these are the actual subjects (numeric value represents a person) that were tied to each row of measurement data
 <p>7.  The rest of the data files were raw data that were used to come up with the x_train results files, and they were NOT used in this project.
-
-
-
-
-
-
-
-
-ACKNOWLEDGEMENT: Data used for this project comes from the following study: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-
-The Notes provided by David Hood here: 
-https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment
-were instrumental in my decisions around how the data would look, what is and is not included, how it is presented, and how I extracted the data from the website.
-Per Hood's directions, you can download the files by invoking the read.table() function, using the web address from the github repo.
-Also, I chose to follow the WIDE data format, not the NARROW, though he specifically indicated both are acceptable.
+<br>
+<br>
+<p>ACKNOWLEDGEMENT: Data used for this project comes from the following study: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+<br>
+<p>The Notes provided by David Hood here: 
+<b>https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment</b>
+were instrumental in my decisions around how the data would look, what is and is not included, how it is presented, and how I extracted the data from the website.  Per Hood's directions, you can download the files by invoking the read.table() function, using the web address from the github repo.  Also, I chose to follow the WIDE data format, not the NARROW, though he specifically indicated both are acceptable.
