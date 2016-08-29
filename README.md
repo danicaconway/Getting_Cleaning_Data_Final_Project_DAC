@@ -4,14 +4,16 @@ Danica Conway, 8/28/2016
 
 <h3>Abstract:</h3>
 Experimental data from the UCI Machine Learning Repository was downloaded and manipulated for the purpose of showing that the user (me) could gather data from a website, join it together in a meaningful way, label it meaningfully, and then provide a tidy subset of data that contained the grouped mean results based on the Activity Type and Test Subject.  This data could potentially then be used by someone else to further subset and analyze the data.
-
+<br>
+<br>
 Data provided in this repo includes:
 <p>1. <b>DanicaConwayDataSet1.csv</b> = This is the cleaned up meta-data set that is NOT reduced down to means (of means), but conforms to the requirements of steps 1 through 4, which are to merge the training and test sets.  The raw data found within the 'Inertial Signals' folders for training and test data were not used for this data set.  This data was not required as part of the data set as it was the raw data from which the training_x and test_x results were created, which I believe was explained in David Hood's wordpress discussion of the project.  This data has activity labels and the subject number for each person that was involved in the study.  I used the features names provided by the study for column headers as I thought they described what they were fairly well without needing to be changed (at least when the readme and features_info files from the study are read and taken into consideration).  Also, only the columns from the test results data where the column name included the word mean or the initials std (for standard deviation) were included in the cleaned data set.  This data set is a wide data set, not a narrow one (though I am given to understand that both are acceptable.)
 <p>2. <b>DanicaConwayMeanResults.csv</b> = this is the aggregated data file, where first the test subject number was aggregated, then the activity type was aggregated, and for each subject and activity type, every column was meaned (averaged).  Column headers were re-named with a prefix of MEAN_OF to indicate that the values represent means of means and standard deviations of the parent data set.  As per Cook's discussion of this topic, this is considered an acceptable method, to take a mean of a bunch of means, and a mean of a standard deviation.
 <p>3. <b>Codebook.txt</b> = this describes what each column in the data represents, for both data sets.
 <p>4. <b>ReadMe.md</b> - this file, whose intent is to describe what the repo contains, and what each file represents.
-
-Nh3>Methods Used To Get and Clean Data</h3>
+<br>
+<br>
+<h3>Methods Used To Get and Clean Data</h3>
 <p>1.  Data was downloaded using the read.table function
 <p>2.  Measurement results data from the training portion and the actual testing portion of the experiment were row bound
 <p>3.  The features.txt file was used to put header names on the columns
@@ -28,7 +30,9 @@ Nh3>Methods Used To Get and Clean Data</h3>
 <p>1.  Each variable forms a column.
 <p>2.  Each observation forms a row.
 <p>3.  Each type of observational unit forms a table.
-
+<br>
+<br>
+<h3>References & Acknowledgements</h3>
 <i>Reference for Tidy Data Principles: http://vita.had.co.nz/papers/tidy-data.pdf</i>
 Data was pulled from the <b>Human Activity Recognition on Smartphones project</b> website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 Data used included training as well as testing results and included the following files:
