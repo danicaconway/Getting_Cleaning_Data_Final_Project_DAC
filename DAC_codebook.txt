@@ -37,7 +37,7 @@ The authors determined means of these multiple different measurements, as well a
 and it was these that were used for the Getting and Cleaning Data exercise
 
 
-Dataset 1:  DanicaConwayDataSet1.csv 
+Dataset 1:  DanicaConwayDataSet1.txt 
 
 Summary:  This file contains the non-aggregated experimental measurements for all test subjects, both
 during the training phase and the actual test phase of the experiment, including all activity types
@@ -102,7 +102,7 @@ For those interested in understanding what the accelerometers and gyroscopes are
 measuring, please refer to:
 http://www.instructables.com/id/Accelerometer-Gyro-Tutorial/
 
-Dataset 2:  DanicaConwayMeanResults.csv
+Dataset 2:  DanicaConwayMeanResults.txt
 
 Summary:  This dataset is aggregated by activity type, then participant number.  The values in columns 3-88
 are actually mean values of the repetitions that were included in the first dataset, so they end up being
